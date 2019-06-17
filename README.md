@@ -1,5 +1,5 @@
 # springJdbcConfiguringJdbcTemplate
-This example presents the basic concept of configuring JdbcTemplate in Spring JDBC.
+This example presents the basic concept of using JdbcTemplate in Spring JDBC.
 
 The technologies used are :
  - Spring 4.3.18
