@@ -7,6 +7,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
+/**
+ * 
+ * @author mounir.sahrani@gmail.com
+ *
+ */
 @Configuration
 public class Conf {
 	@Bean

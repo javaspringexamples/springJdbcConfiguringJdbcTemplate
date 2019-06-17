@@ -15,8 +15,23 @@ public class Main {
 
 		UserDao userDao = applicationContext.getBean(UserDao.class);
 		User user = new User();
+		user.setName("Waaaaw");
+		user.setUserName("Wiiiiiw");
+		user.setLocked(false);
 		userDao.insert(user);
+
+		user = userDao.find(user.getId());
+		System.out.println(user.getName() + ", " + user.getUserName() + ", " + user.isLocked());
+
+		user.setLocked(true);
 		userDao.update(user);
-		userDao.delete(999);
+
+		user = userDao.find(user.getId());
+		System.out.println(user.getName() + ", " + user.getUserName() + ", " + user.isLocked());
+
+		userDao.delete(user.getId());
+		
+		user = userDao.find(user.getId());
+		System.out.println(user);
 	}
 }
